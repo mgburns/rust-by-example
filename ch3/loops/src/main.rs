@@ -15,4 +15,14 @@ fn main() {
         }
     };
     println!("The result is {}", result);
+
+    let mut number = 3;
+
+    // while is like loop but with a condition
+    while number != 0 {
+        println!("{}!", number);
+
+        number = number - 1;
+    }
+    println!("liftoff!");
 }
