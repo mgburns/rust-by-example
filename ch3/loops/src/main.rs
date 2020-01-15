@@ -25,4 +25,17 @@ fn main() {
         number = number - 1;
     }
     println!("liftoff!");
+
+    let a = [10, 20, 30, 40, 50];
+
+    // this could be accomplished with a `while` loop, but `for` is cleaner
+    for element in a.iter() {
+        println!("the value is: {}", element);
+    }
+
+    // `for` is more idiomatic than `while` in most situations.
+    for number in (1..4).rev() { // (1..4) generates a Range, a type provided by the standard library
+        println!("{}!", number);
+    }
+    println!("liftoff!");
 }
