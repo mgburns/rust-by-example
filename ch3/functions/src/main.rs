@@ -1,5 +1,9 @@
 fn main() {
-    println!("Hello, world!");
+    // Rust is more explicit with statements v. expressions than other languages.
+    let y = {
+        let x = 3; // let x is a statement, 3 is an expression that resolves to the value 3
+        x + 1 // expressions don't include ending semicolons, so this will be assigned to y
+    }; // this block is also an expression!
 
     another_function(5, 6);
 }
