@@ -36,4 +36,17 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     let months: [&str; 12] = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     println!("The third month is: {}", months[3 - 1]);
+
+    // this code will compile but panic at runtime, preventing invalid memory access unlike other low-level languages
+    // let index = 13;
+    // let invalid_month = months[index];
+
+    // Functions
+    // Style note: Rust convention is snake case for variable and function names.
+    another_function();
+}
+
+// Note: This function doesn't need to be defined after main
+fn another_function() {
+    println!("Another function.");
 }
