@@ -7,6 +7,7 @@ fn main() {
 
     another_function(5, 6);
     println!("Five: {}", five());
+    println!("Five plus one: {}", plus_one(5));
 }
 
 // in function signatures you must declare the type of each parameter
@@ -18,4 +19,8 @@ fn another_function(x: i32, y: i32) {
 // return values must have a declared type, but don't need a name
 fn five() -> i32 {
     5
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
 }
