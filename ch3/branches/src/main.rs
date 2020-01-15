@@ -13,4 +13,23 @@ fn main() {
     } else { // else is optional
         println!("number is not divisible by 2, 3, or 4");
     }
+
+    // since if is an expression you can assign the result to a variable with `let`
+    let condition = true;
+    let number = if condition {
+        5
+    } else {
+        6
+    };
+    println!("The avlue of number is: {}", number);
+
+    // the compiler is smart enough to know if arms resolve to incompatibile types
+    let condition = true;
+    let number = if condition {
+        5
+    } else {
+        // 6
+        // "six"
+        // ^^^ expected integer, found &str
+    };
 }
