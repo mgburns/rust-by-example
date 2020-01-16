@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "ch3/variables"
+		},
+		{
+			"path": "ch2/guessing_game"
+		},
+		{
+			"path": "ch3/functions"
+		},
+		{
+			"path": "ch3/branches"
+		},
+		{
+			"path": "ch3/loops"
+		},
+		{
+			"path": "ch4/ownership"
+		},
+		{
+			"path": "ch4/borrowing"
+		},
+		{
+			"path": "ch4/slices"
+		}
+	]
+}
