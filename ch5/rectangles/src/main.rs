@@ -12,7 +12,11 @@ impl Rectangle {
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
+}
 
+// you can have multiple impl blocks
+// this is a contrived example, but it's useful for generic types and traits
+impl Rectangle {
     // associated function (does not take self as first param)
     fn square(size: u32) -> Rectangle {
         Rectangle { width: size, height: size }
