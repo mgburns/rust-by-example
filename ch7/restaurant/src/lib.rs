@@ -1,4 +1,10 @@
 
+// Loads module contents from another file with the same name as the module
+mod front_of_house;
+
+// Re-exports for external code as `hosting` with `pub use`
+pub use front_of_house::hosting;
+
 mod back_of_house {
     // For structs, you have to declare the struct and fields as pub
     pub struct Breakfast {
@@ -32,11 +38,6 @@ mod back_of_house {
 
     fn cook_order() {}
 }
-
-use std::collections::HashMap;
-
-use std::fmt::Result;
-use std::io::Result as IoResult;
 
 // Using nested paths to clean up large use lists
 // use std::io;
